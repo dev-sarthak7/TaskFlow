@@ -163,7 +163,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <h1>{board.name}</h1>
-        <p className="app-subtitle">TaskFlow board</p>
+        <p className="app-subtitle">Board</p>
       </header>
 
       {actionError && (

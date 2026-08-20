@@ -18,7 +18,7 @@ function seed(db) {
     db.prepare('DELETE FROM columns').run();
     db.prepare('DELETE FROM boards').run();
 
-    const boardId = insertBoard.run('Product Launch').lastInsertRowid;
+    const boardId = insertBoard.run('TASKFLOW').lastInsertRowid;
 
     const todoId = insertColumn.run(boardId, 'To Do', 0).lastInsertRowid;
     const inProgressId = insertColumn.run(boardId, 'In Progress', 1).lastInsertRowid;
